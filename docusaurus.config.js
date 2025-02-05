@@ -94,21 +94,25 @@ const config = {
                 label: 'Discord',
                 href: 'https://discord.gg/k5WPk93K7b',
               },
+              {
+                label: 'Patreon',
+                href: 'https://www.patreon.com/ModernWarfareCubed',
+              },
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
+                label: 'Cubed Development on GitHub',
                 href: 'https://github.com/Cubed-Development',
               },
               {
-                label: 'Main Mod GitHub',
+                label: 'MWC on GitHub',
                 href: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed',
               },
               {
-                label: 'Documentation GitHub',
+                label: 'Documentation Source Code',
                 href: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation',
               },
             ],
