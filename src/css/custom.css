@@ -6,11 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito&display=swap');
 
-@font-face {
-  font-family: 'Monaspace Krypton';
-  src: url(https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceKrypton-Light.woff) format(woff2);
-}
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-font-family-base: 'Nunito', sans-serif;
@@ -72,49 +67,4 @@ div.footer__title, a.footer__link-item {
   div.footer__title, a.footer__link-item {
     color: #f5f6f7;
   }
-}
-
-/* Menu item styles */
-li.menu__list-item {
-  font-family: 'Monaspace Krypton', monospace;
-}
-
-li.menu__list-item.assets {
-  position: relative;
-}
-
-li.menu__list-item.assets::before {
-  content: "Assets";
-  position: absolute;
-  top: 0.1125rem;
-  right: 0.625rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.1125rem 0.925rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  background-color: rgba(243, 156, 18, 0.15);
-  color: #e67e22;
-  border: 1px solid #d35400;
-}
-
-li.menu__list-item.hacks {
-  position: relative;
-}
-
-li.menu__list-item.hacks::before {
-  font-family: 'Monaspace Krypton', monospace;
-  content: "Hacks";
-  position: absolute;
-  top: 0.1125rem;
-  right: 0.625rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.1125rem 0.925rem;
-  margin-right: 0.1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  background-color: rgba(0, 255, 0, 0.15);
-  color: #27ae60;
-  border: 1px solid #229954;
 }
