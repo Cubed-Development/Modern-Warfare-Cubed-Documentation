@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Code Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Node
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.1.0
         with:
-          node-version: 21
+          node-version: 23
       
       - name: Build Docusaurus website
         run: |

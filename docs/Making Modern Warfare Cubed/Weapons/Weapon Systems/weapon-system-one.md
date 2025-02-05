@@ -46,3 +46,5 @@ new Transition((renderContext) -> { // Reload position
 * Required to recompile the mod whenever you make any change
 * Complex animations are very difficult to read and modify
 * Many builder methods required. (Ex: withFirstPersonPositioningReloading, withFirstPersonCustomPositioningReloading, and withFirstPersonLeftHandPositioningReloading are all required for a basic animation)
+
+
