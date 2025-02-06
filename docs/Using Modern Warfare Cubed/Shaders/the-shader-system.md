@@ -21,11 +21,12 @@ Modern Warfare Cubed's shader system is pretty extensive, but here's some quick 
 
 * Shaders can be overwritten with resource packs
 * Shaders have poor compatibility with shaders from other mods
+* All shaders are loaded at `com.paneedah.weaponlib.render.Shaders`
 
 ## Vertex and Fragment Shaders
 Shaders are written in [GLSL], a C-like language, where files use the `.frag` and '`.vert` for the Vertex and Fragment shaders.
 
-As a example, `billboard.frag` and `billboard.vert` both work together to make up the `billboard` shader 
+As an example, `billboard.frag` and `billboard.vert` both work together to make up the `billboard` shader 
 
 ### billboard.frag Example 
 ```glsl

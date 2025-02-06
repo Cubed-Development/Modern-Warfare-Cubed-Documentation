@@ -24,7 +24,7 @@ Make sure that your custom skins are `.png` files otherwise they won't work!
 
 :::tip
 
-If you want to avoid your custom skins from being stretched out, try to keep them in a 1:1 ratio.
+If you want to avoid your custom skins from being stretched out, keep them to a 1:1 ratio. (Ex: 64x64)
 
 :::
 
@@ -56,7 +56,7 @@ Just add the names of you custom skins you added to your clients in it, for exam
 {
   "skins": [
     "oldiepinkcamo",
-    "goldskin"
+    "customgoldskin"
   ]
 }
 ```

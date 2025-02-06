@@ -43,7 +43,7 @@ Model elements such as folders, cubes, etc. should be named using `camelCase`, f
 
 :::info
 
-Remember that the player model isn't static like in Blockbench; legs move when animating sneaking makes the body clip into the legs etc...
+Remember that the player model isn't static like in Blockbench; legs move when walking, sneaking makes the body clip into the legs etc...
 
 :::
 
