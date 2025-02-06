@@ -17,7 +17,7 @@ Documenting things takes time, like **a lot** of time, so please be patient.
 
 :::
 
-Weapon System One or (WS1) was the animation system used for VMW 2.0, and for guns in 3.0 that were not revamped.
+Weapon System One (WS1) was the animation system used for VMW 2.0, and for guns in 3.0 that were not revamped.
 
 It allows developers to manually animate weapons and their attachments, like so: 
 
