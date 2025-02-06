@@ -2,6 +2,8 @@
 pagination_next: null
 pagination_prev: null
 description: How to create a new gun for Modern Warfare Cubed
+tags:
+  - Programming
 ---
 
 # Creating and Modifying Weapons 
