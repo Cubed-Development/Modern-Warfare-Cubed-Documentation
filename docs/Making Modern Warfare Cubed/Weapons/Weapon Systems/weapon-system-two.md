@@ -21,6 +21,9 @@ Weapon System Two or (WS2) is the animation system used for VMW 3.0. It replaced
 ### Upsides
 * Animations are set inside a json file
 * Animations can be applied with resource packs and reloaded
+* Easier to make more complex animations
+* Easier to read and modify
 
 ### Downsides
 * Porting from VS1 is difficult
+* Complex animations are still difficult to read and modify
