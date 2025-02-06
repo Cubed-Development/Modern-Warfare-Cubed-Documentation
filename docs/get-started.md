@@ -16,6 +16,9 @@ Documenting things takes time, like **a lot** of time, so please be patient.
 
 :::
 
+## What is Modern Warfare Cubed?
+Modern Warfare Cubed is a fork of the popular Vic's Modern Warfare Mod to improve and expand upon the experience.
+
 ## Using Modern Warfare Cubed
 
 - [Custom Skins](Using%20Modern%20Warfare%20Cubed/custom-skins) learn how to create custom skins for your weapons.
