@@ -7,6 +7,8 @@ keywords:
   - shaders
 ---
 
+# The Shader System
+
 :::warning
 
 The Modern Warfare Cubed documentation is under construction.
@@ -14,8 +16,6 @@ The Modern Warfare Cubed documentation is under construction.
 Documenting things takes time, like **a lot** of time, so please be patient.
 
 :::
-
-# The Shader System
 
 Modern Warfare Cubed's shader system is pretty extensive, but here's some quick notes:
 
