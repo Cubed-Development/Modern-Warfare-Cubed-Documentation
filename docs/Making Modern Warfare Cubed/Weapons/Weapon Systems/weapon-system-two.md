@@ -18,6 +18,7 @@ Documenting things takes time, like **a lot** of time, so please be patient.
 :::
 
 Weapon System Two (WS2) is the animation system used in VMW 3.0 and MWC. It replaced VS1, but you can still use VS1 methods.
+Should be loaded in the format `{gun_name}.animation.json`.
 
 
 ```json
@@ -69,5 +70,14 @@ Weapon System Two (WS2) is the animation system used in VMW 3.0 and MWC. It repl
 * Complex animations are still difficult to read and modify
 * Currently, does not support Shotguns
 
-## Weapon System 3?
+### Weapon System 3?
 Another Weapon System version isn't planned, at least right now.  
+
+## Weapon System 2 Keys
+* `format_version` The version of WS2 this animation was written for, Should be `1.8.0`
+* `animations` An array containing all the animations. Supported types are `draw`, `inspect`, `load`, `unload`, `reload`, `reloadempty`, `reloadtactical`
+    * `animation.{gun_name}.{type}` 
+      * `loop` Should the animation loop?
+      * `animation_length` The length of the animation in seconds 
+      * `bones` The bones that the animation will be applied too. Supported bones are `main`, `lefthand`, `righthand`, `magazine`, `magazine_extra`, and `action` 
+      * `sound_effects` Sounds effect to play during the animation. Sounds must have been registered to `UniversalSoundLookup`

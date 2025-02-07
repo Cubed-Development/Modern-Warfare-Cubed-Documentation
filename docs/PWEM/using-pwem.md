@@ -23,9 +23,9 @@ It will create a new folder in the `config/mwc` directory named `pwem` where all
 - `bulletsPerReload` - Number of bullets loaded when a player reloads.
 
 ### Shooting Configuration
-- `single` - Whether or not the weapon can shoot in single fire mode.
+- `single` - Whether the weapon can shoot in single fire mode.
 - `burst` - The amount of bullets the weapon will shoot in burst fire mode (0 to disable).
-- `auto` - Whether or not the weapon can shoot in automatic fire mode.
+- `auto` - Whether the weapon can shoot in automatic fire mode.
 
 ### Sound Configuration
 - `shoot` - The sound the weapon will make when shooting.
