@@ -1,7 +1,7 @@
 ---
 pagination_next: null
 pagination_prev: null
-description: What is Weapon System 2?
+description: Documentation on Weapon System 2
 tags:
   - Programming
 ---
@@ -17,8 +17,8 @@ Documenting things takes time, like **a lot** of time, so please be patient.
 
 :::
 
-Weapon System Two (WS2) is the animation system used in VMW 3.0 and MWC. It replaced VS1, but you can still use VS1 methods.
-Should be loaded in the format `{gun_name}.animation.json`.
+Weapon System Two (WS2) is the animation system used in VMW 3.0 and MWC. It replaced VS1, but you can still use VS1 methods. The process of porting a weapon from WS1 to WS2 is called "revamping."
+Animations must be loaded in the format `{gun_name}.animation.json`. 
 
 
 ```json

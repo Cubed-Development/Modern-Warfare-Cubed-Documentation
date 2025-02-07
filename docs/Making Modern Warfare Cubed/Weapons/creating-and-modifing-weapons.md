@@ -38,7 +38,7 @@ The amount to zoom in-out when ADSing
 ### .withConfigGroup(GunConfigurationGroup.RIFLES)
 The Gun Configuration group this gun should use. 
 
-Options are:  NONE, HANDGUN, LONG_GUN, RIFLE, SHOTGUN, CARBINE, ASSAULT_RIFLE, BATTLE_RIFLE, SNIPER_RIFLE, MACHINE_GUN, SUBMACHINE_GUN,
+Options are: NONE, HANDGUN, LONG_GUN, RIFLE, SHOTGUN, CARBINE, ASSAULT_RIFLE, BATTLE_RIFLE, SNIPER_RIFLE, MACHINE_GUN, SUBMACHINE_GUN,
 
 ### .hasFlashPedals()
 If the gun should show the "flash" images when it is firing

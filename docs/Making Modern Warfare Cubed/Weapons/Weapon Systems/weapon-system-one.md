@@ -1,7 +1,7 @@
 ---
 pagination_next: null
 pagination_prev: null
-description: What is Weapon System 1?
+description: Documentation on Weapon System 1
 tags:
   - Programming
 ---
@@ -17,7 +17,13 @@ Documenting things takes time, like **a lot** of time, so please be patient.
 
 :::
 
-Weapon System One (WS1) was the animation system used for VMW 2.0, and for guns in 3.0 that were not revamped.
+:::note[Using Weapon System 1 is not Recommended!]
+
+This page is an archive as we revamp weapons to use [Weapon System 2].
+
+:::
+
+Weapon System One (WS1) was the animation system used for VMW 2.0, and for the guns in VMW 3.0 that were not revamped.
 
 It allows developers to manually animate weapons and their attachments, like so: 
 
@@ -49,4 +55,4 @@ new Transition((renderContext) -> { // Reload position
 * Complex animations are very difficult to read and modify
 * Many builder methods required. (Ex: withFirstPersonPositioningReloading, withFirstPersonCustomPositioningReloading, and withFirstPersonLeftHandPositioningReloading are all required for a basic animation)
 
-
+[Weapon System 2]: https://cubed-development.github.io/Modern-Warfare-Cubed-Documentation/Making%20Modern%20Warfare%20Cubed/Weapons/Weapon%20Systems/weapon-system-two
