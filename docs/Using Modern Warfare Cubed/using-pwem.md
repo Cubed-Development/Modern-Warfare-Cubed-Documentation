@@ -6,7 +6,7 @@ keywords:
   - Modern Warfare Cubed
   - Panda's Weapon Editor
   - PWEM
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # Using PWEM

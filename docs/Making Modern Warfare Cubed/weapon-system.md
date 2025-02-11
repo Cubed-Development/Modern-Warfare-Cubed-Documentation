@@ -174,3 +174,15 @@ Animations must be loaded in the format `{gun_name}.animation.json`.
           `magazine`, `magazine_extra`, and `action`
         * `sound_effects` Sounds effect to play during the animation. Sounds must have been registered to
           `UniversalSoundLookup`
+
+## [DRAFT] Version 3
+
+:::warning
+
+The version 3 is in drafting phase, it may widely change or may not reflect the full picture.
+
+:::
+
+### Weapon Editor
+
+The half implemented weapon editor will be finished for version 3.

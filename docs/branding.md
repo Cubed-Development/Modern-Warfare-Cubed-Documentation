@@ -9,7 +9,7 @@ keywords:
   - Banner
   - Color
   - Branding
-sidebar_position: 7
+sidebar_position: 4
 ---
 
 import AssetDisplay from '@site/src/components/AssetDisplay';
