@@ -1,7 +1,7 @@
 ---
 pagination_next: null
 pagination_prev: null
-description: Documentation using PWEM with Modern Warfare Cubed
+description: Documentation using PWEM Modern Warfare Cubed
 keywords:
   - Modern Warfare Cubed
   - Panda's Weapon Editor
