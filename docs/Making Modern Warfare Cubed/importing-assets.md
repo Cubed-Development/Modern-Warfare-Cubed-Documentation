@@ -30,7 +30,7 @@ Documenting things takes time, like **a lot** of time, so please be patient.
 
 Importing a model is tricky since a lot of things use different systems, so while we are trying to make it streamlined into one system, enjoy having different categories
 
-But let start by the basic which works for every model, just place the model you want to import in an appropriate place, usually `java.com.paneedah.mwc.models`.
+But let start by the basic which works for every model, just place the model you want to import in an appropriate place under `java.com.paneedah.mwc.models`.
 
 Once done, open that model and add a Javadoc to the class; this will allow you to give credit to the artist and dev:
 
