@@ -24,6 +24,7 @@ The Main Command for MWC, "/mwc"
 ## The Balancepack Command
 The Command for working with Balancepacks, "/balancepack"
 
+### Usage
 * `/balancepack info`
   * Displays information about the currently loaded balance pack.
 * `/balancepack list`
@@ -38,3 +39,15 @@ The Command for working with Balancepacks, "/balancepack"
   * Download from Pastebin by code (the command will add the raw URL automatically):
 * `/balancepack download raw <url>`
   * Download from a direct "raw" URL:
+
+
+## The Weapon Debug Command
+The command to inspect and modify weapon properties, "/wdc".
+
+### Usage
+
+* `/wdc name`
+  * Retrieves and displays the name of the weapon currently held by the player.
+* `/wdc rotpoint <x> <y> <z>`
+  * Sets the pivot point of the weapon's active extra attachment to the specified coordinates.
+  * `<x> <y> <z>` are float values representing the new pivot point in 3D space.
