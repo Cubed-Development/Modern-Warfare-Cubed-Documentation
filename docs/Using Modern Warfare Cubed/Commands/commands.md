@@ -1,7 +1,7 @@
 ---
 pagination_next: null
 pagination_prev: null
-description: Guide on debugging Modern Warfare Cubed
+description: Guide on the commands in Modern Warfare Cubed
 keywords: 
   - MWC
   - Modern Warfare Cubed
@@ -38,7 +38,7 @@ The Command for working with Balancepacks, "/balancepack"
 * `/balancepack download pastebin  <pastebin code>`
   * Download from Pastebin by code (the command will add the raw URL automatically):
 * `/balancepack download raw <url>`
-  * Download from a direct "raw" URL:
+  * Download from a direct "raw" URL
 
 
 ## The Weapon Debug Command
@@ -51,3 +51,12 @@ The command to inspect and modify weapon properties, "/wdc".
 * `/wdc rotpoint <x> <y> <z>`
   * Sets the pivot point of the weapon's active extra attachment to the specified coordinates.
   * `<x> <y> <z>` are float values representing the new pivot point in 3D space.
+
+## The Crafting Manager Command
+The command for working with `craftingmappings.json`, "/mwccraftingmanager"
+
+### Usage
+* `/mwccraftingmanager reload`
+  * Reloads the current crafting setup
+* `/mwccraftingmanager status`
+  * Provides current crafting file manager status
