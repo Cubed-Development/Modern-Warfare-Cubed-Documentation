@@ -41,7 +41,7 @@ const config = {
       ({
         docs: {
           routeBasePath: '/',
-          editUrl: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation/blob/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
