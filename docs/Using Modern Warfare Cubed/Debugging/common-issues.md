@@ -35,6 +35,9 @@ You can fix this by:
 * Install [NonConflictKeys](https://www.curseforge.com/minecraft/mc-mods/nonconflictkeys/files/4547892), this will allow all keybindings with the same key to be activated when pressed.
 * Use [CleanroomLoader](https://github.com/CleanroomMC/Cleanroom). Fork of Forge, it contains a patch implementation of NonConflictKeys.
 
+### Reloading Magazines 
+Some people have issues reloading magazines. Make sure you followed the steps above and have the correct ammo for the mag, then hold the mag in your inventory and press Reload 
+
 ## Crash on Startup
 Make sure you have [MixinBooter](https://www.curseforge.com/minecraft/mc-mods/mixin-booter/files) and 
 [RedCore](https://www.curseforge.com/minecraft/mc-mods/red-core/files) installed.
