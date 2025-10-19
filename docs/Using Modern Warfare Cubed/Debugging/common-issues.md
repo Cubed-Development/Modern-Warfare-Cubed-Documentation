@@ -41,3 +41,7 @@ Some people have issues reloading magazines. Make sure you followed the steps ab
 ## Crash on Startup
 Make sure you have [MixinBooter](https://www.curseforge.com/minecraft/mc-mods/mixin-booter/files) and 
 [RedCore](https://www.curseforge.com/minecraft/mc-mods/red-core/files) installed.
+
+## Does MWC have an official server?
+As of right now no, but you can join our discord and check out the `#partner-servers` channel where we link servers running MWC.
+
