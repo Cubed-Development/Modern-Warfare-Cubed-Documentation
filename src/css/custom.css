@@ -1,131 +1,131 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito&display=swap');
-
 @font-face {
-  font-family: 'Monaspace Krypton';
-  src: url(https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceKrypton-Light.woff) format(woff2);
-}
+	font-family: "Monaspace Krypton";
+	font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10";
+	src: url(https://cdn.jsdelivr.net/gh/githubnext/monaspace@main/fonts/Web%20Fonts/Static%20Web%20Fonts/Monaspace%20Krypton/MonaspaceKrypton-Regular.woff2) format(woff2);}
 
-/* You can override the default Infima variables here. */
+/* region Light Theme */
+
 :root {
-  --ifm-font-family-base: 'Nunito', sans-serif;
-  --ifm-heading-font-family: 'Nunito', sans-serif;
-  --ifm-font-family-monospace: 'Fira Code', monospace;
+	background-color: #FFFFFF;
 
-  background-color: #ffffff;
-
-  --ifm-color-primary: #fdcb6e;
-  --ifm-color-primary-dark: #fdbe4a;
-  --ifm-color-primary-darker: #fcb838;
-  --ifm-color-primary-darkest: #fba403;
-  --ifm-color-primary-light: #fdd892;
-  --ifm-color-primary-lighter: #fedea4;
-  --ifm-color-primary-lightest: #fef2d9;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-color-primary: #FDCB6E;
+	--ifm-color-primary-dark: #FDBE4A;
+	--ifm-color-primary-darker: #FCB838;
+	--ifm-color-primary-darkest: #FBA403;
+	--ifm-color-primary-light: #FDD892;
+	--ifm-color-primary-lighter: #FEDEA4;
+	--ifm-color-primary-lightest: #FEF2D9;
 }
 
 nav.navbar--fixed-top {
-  background-color: #ededed;
+	background-color: #EDEDED;
 }
 
 footer.footer--dark {
-  color: #1c1e21;
-  background-color: #ededed;
+	background-color: #EDEDED;
+	color: #1C1E21;
 }
 
-div.footer__title {
-  color: #1c1e21;
+/* endregion */
+
+/* region Dark Theme */
+
+[data-theme="dark"] {
+	background-color: #111111;
+
+	--ifm-color-primary: #FDCB6E;
+	--ifm-color-primary-dark: #FDBE4A;
+	--ifm-color-primary-darker: #FCB838;
+	--ifm-color-primary-darkest: #FBA403;
+	--ifm-color-primary-light: #FDD892;
+	--ifm-color-primary-lighter: #FEDEA4;
+	--ifm-color-primary-lightest: #FEF2D9;
+
+	nav.navbar--fixed-top {
+		background-color: #1A1A1A;
+	}
+
+	footer.footer--dark {
+		background-color: #1A1A1A;
+		color: #F5F6F7;
+	}
 }
 
-a.footer__link-item {
-  color: #1c1e21;
+/* endregion */
+
+:root {
+	--ifm-font-family-base: "Nunito", sans-serif;
+	--ifm-heading-font-family: "Nunito", sans-serif;
+	--ifm-font-family-monospace: "Monaspace Krypton", monospace;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  background-color: #111111;
-
-  --ifm-color-primary: #fdcb6e;
-  --ifm-color-primary-dark: #fdbe4a;
-  --ifm-color-primary-darker: #fcb838;
-  --ifm-color-primary-darkest: #fba403;
-  --ifm-color-primary-light: #fdd892;
-  --ifm-color-primary-lighter: #fedea4;
-  --ifm-color-primary-lightest: #fef2d9;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-
-  nav.navbar--fixed-top {
-    background-color: #1A1A1A;
-  }
-
-  footer.footer--dark {
-    color: #f5f6f7;
-    background-color: #1A1A1A;
-  }
-
-  div.footer__title {
-    color: #f5f6f7;
-  }
-
-  a.footer__link-item {
-    color: #f5f6f7;
-  }
-}
-
-li.menu__list-item.debug {
-  font-family: 'Monaspace Krypton', monospace;
-}
-
-li.menu__list-item.hacks {
-  font-family: 'Monaspace Krypton', monospace;
-}
-
+li.menu__list-item.debug,
+li.menu__list-item.hacks,
 li.menu__list-item.hacks-folder {
-  font-family: 'Monaspace Krypton', monospace;
+	font-family: "Monaspace Krypton", monospace;
 }
 
-li.menu__list-item.assets {
-  position: relative;
+/* region Badges */
+
+li.menu__list-item.assets,
+li.menu__list-item.assets-folder,
+li.menu__list-item.hacks,
+li.menu__list-item.hacks-folder {
+	position: relative;
 }
 
-li.menu__list-item.assets::before {
-  content: "Assets";
-  position: absolute;
-  top: 0.1125rem;
-  right: 0.625rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.1125rem 0.925rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  background-color: rgba(253, 203, 110, 0.1);
-  color: #fdcb6e;
-  border: 1px solid #fdbe4a;
+li.menu__list-item.assets::before,
+li.menu__list-item.assets-folder::before,
+li.menu__list-item.hacks::before,
+li.menu__list-item.hacks-folder::before {
+	position: absolute;
+
+	margin-right: 0.1rem;
+
+	top: 0.1125rem;
+	right: 0.625rem;
+
+	padding: 0.1125rem 0.925rem;
+
+	font-size: 0.875rem;
+	border-radius: 9999px;
+	border: 1px solid;
+
+	pointer-events: none;
 }
 
-li.menu__list-item.hacks {
-  position: relative;
+/* region Assets */
+
+li.menu__list-item.assets::before,
+li.menu__list-item.assets-folder::before {
+	border-color: #FDBE4A;
+	background-color: rgba(253, 203, 110, 0.1);
+	color: #FDCB6E;
+
+	content: "Assets";
 }
 
-li.menu__list-item.hacks::before {
-  font-family: 'Monaspace Krypton', monospace;
-  content: "Hacks";
-  position: absolute;
-  top: 0.1125rem;
-  right: 0.625rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.1125rem 0.925rem;
-  margin-right: 0.1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  background-color: rgba(0, 255, 0, 0.1);
-  color: #00ff00;
-  border: 1px solid #00dc00;
+li.menu__list-item.assets-folder::before {
+	right: 2rem;
 }
+
+/* endregion */
+
+/* region Hacks */
+
+li.menu__list-item.hacks::before,
+li.menu__list-item.hacks-folder::before {
+	border-color: #00DC00;
+	background-color: rgba(0, 255, 0, 0.1);
+	color: #00FF00;
+
+	content: "Hacks";
+}
+
+li.menu__list-item.hacks-folder::before {
+	right: 2rem;
+}
+
+/* endregion */
+
+/* endregion */
