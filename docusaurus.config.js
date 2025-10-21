@@ -4,135 +4,137 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
-/** @type {import('@docusaurus/types').Config} */
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+/** @type {import("@docusaurus/types").Config} */
 const config = {
-  title: 'Modern Warfare Cubed Documentation',
-  tagline: 'Lasagna & spaghetti taste good, however documented lasagna & spaghetti tastes even better!',
-  favicon: 'img/favicon.ico',
+	title: "Modern Warfare Cubed Documentation",
+	tagline: "Lasagna & spaghetti taste good, however documented lasagna & spaghetti tastes even better!",
+	favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
-  url: 'https://docs.mwc.redstudio.dev/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+	future: {
+		experimental_faster: true,
+		v4: true
+	},
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Cubed-Development', // Usually your GitHub org/user name.
-  projectName: 'Modern-Warfare-Cubed-Documentation', // Usually your repo name.
+	url: "https://docs.mwc.redstudio.dev/",
+	baseUrl: "/",
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+	// GitHub Pages deployment config.
+	organizationName: "Cubed-Development",
+	projectName: "Modern-Warfare-Cubed-Documentation",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+	onBrokenLinks: "warn",
 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          routeBasePath: '/',
-          editUrl: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation/edit/main/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],
-  ],
+	presets: [
+		[
+			"classic",
+			/** @type {import("@docusaurus/preset-classic").Options} */
+			({
+				docs: {
+					routeBasePath: "/",
+					editUrl: "https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation/edit/main/"
+				},
+				theme: {
+					customCss: "./src/css/custom.css"
+				}
+			})
+		]
+	],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'Modern Warfare Cubed Documentation',
-        hideOnScroll: true,
-        logo: {
-          alt: 'Modern Warfare Cubed Logo',
-          src: 'img/logo.png',
-        },
-        items: [
+	themeConfig:
+	/** @type {import("@docusaurus/preset-classic").ThemeConfig} */
+		({
+			navbar: {
+				title: "Modern Warfare Cubed Documentation",
+				hideOnScroll: true,
+				logo: {
+					alt: "Modern Warfare Cubed Logo",
+					src: "img/logo.png"
+				},
+				items: [
 
-          {
-            href: 'https://github.com/Cubed-Development',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        logo: {
-          alt: 'Modern Warfare Cubed Logo',
-          src: 'img/logo.png',
-          width: 64,
-          height: 64,
-        },
-        style: 'dark',
-        links: [
-          {
-            title: 'Documentation',
-            items: [
-              {
-                label: 'Get Started',
-                to: '/',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/k5WPk93K7b',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Cubed-Development',
-              },
-              {
-                label: 'Main Mod GitHub',
-                href: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed',
-              },
-              {
-                label: 'Documentation GitHub',
-                href: 'https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cubed Development, Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-        additionalLanguages: ['java', 'javastacktrace', 'javadoclike', 'javadoc', 'groovy'],
-      },
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
-      announcementBar: {
-        id: 'earlyAccessPreview',
-        content:
-            'This is a early access preview of the Modern Warfare Cubed documentation. Information may not be correct or complete. Some docs may be empty',
-        backgroundColor: '#fba403',
-        textColor: '#ffffff',
-        isCloseable: false,
-      },
-    }),
+					{
+						href: "https://github.com/Cubed-Development",
+						label: "GitHub",
+						position: "right"
+					}
+				]
+			},
+			footer: {
+				links: [
+					{
+						title: "Documentation",
+						items: [
+							{
+								label: "Get Started",
+								to: "/"
+							}
+						]
+					},
+					{
+						title: "Community",
+						items: [
+							{
+								label: "Discord",
+								href: "https://discord.gg/k5WPk93K7b"
+							},
+							{
+								label: "Suggestions",
+								href: "https://feedback.mwc.redstudio.dev"
+							},
+							{
+								label: "Roadmap",
+								href: "https://feedback.mwc.redstudio.dev/roadmap"
+							}
+						]
+					},
+					{
+						title: "More",
+						items: [
+							{
+								label: "GitHub",
+								href: "https://github.com/Cubed-Development"
+							},
+							{
+								label: "Main Mod GitHub",
+								href: "https://github.com/Cubed-Development/Modern-Warfare-Cubed"
+							},
+							{
+								label: "Documentation GitHub",
+								href: "https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation"
+							}
+						]
+					}
+				],
+				logo: {
+					alt: "Modern Warfare Cubed Logo",
+					src: "img/logo.webp",
+					width: 64,
+					height: 64
+				},
+				copyright: "Built with <3 by Luna Mira Lage (Desoroxxx) with Docusaurus"
+			},
+			prism: {
+				theme: prismThemes.gruvboxMaterialLight,
+				darkTheme: prismThemes.gruvboxMaterialDark,
+				additionalLanguages: ["java", "javastacktrace", "javadoclike", "javadoc", "groovy"]
+			},
+			colorMode: {
+				respectPrefersColorScheme: true
+			},
+			announcementBar: {
+				id: "earlyAccessPreview",
+				content:
+					"This is a early access preview of the Modern Warfare Cubed documentation. Information may not be correct or complete. Some docs may be empty",
+				backgroundColor: "#fba403",
+				textColor: "#ffffff",
+				isCloseable: true
+			}
+		})
 };
 
 export default config;
