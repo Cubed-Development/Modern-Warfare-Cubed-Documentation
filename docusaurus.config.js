@@ -25,7 +25,10 @@ const config = {
 	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
 	future: {
 		experimental_faster: true,
-		v4: true
+		v4: {
+			removeLegacyPostBuildHeadAttribute: true,
+			useCssCascadeLayers: false,
+		}
 	},
 
 	url: "https://docs.mwc.redstudio.dev/",
@@ -37,20 +40,23 @@ const config = {
 
 	onBrokenLinks: "warn",
 
-	presets: [
+	plugins: [
 		[
-			"classic",
-			/** @type {import("@docusaurus/preset-classic").Options} */
-			({
-				docs: {
-					routeBasePath: "/",
-					editUrl: "https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation/edit/main/"
-				},
-				theme: {
-					customCss: "./src/css/custom.css"
-				}
-			})
-		]
+			"@docusaurus/plugin-content-docs",
+			{
+				routeBasePath: "/",
+				editUrl: "https://github.com/Cubed-Development/Modern-Warfare-Cubed-Documentation/edit/main/"
+			}
+		],
+	],
+
+	themes: [
+		[
+			"@docusaurus/theme-classic",
+			{
+				customCss: './src/css/custom.css',
+			},
+		],
 	],
 
 	themeConfig:
@@ -124,7 +130,7 @@ const config = {
 					width: 64,
 					height: 64
 				},
-				copyright: "Built with <3 by Luna Mira Lage (Desoroxxx) with Docusaurus"
+				copyright: "Built with &lt;3 by Luna Mira Lage (Desoroxxx) with Docusaurus"
 			},
 			prism: {
 				theme: prismThemes.gruvboxMaterialLight,
@@ -138,8 +144,8 @@ const config = {
 				id: "earlyAccessPreview",
 				content:
 					"This is a early access preview of the Modern Warfare Cubed documentation. Information may not be correct or complete. Some docs may be empty",
-				backgroundColor: "#fba403",
-				textColor: "#ffffff",
+				backgroundColor: "#FBA403",
+				textColor: "#FFFFFF",
 				isCloseable: true
 			}
 		})
