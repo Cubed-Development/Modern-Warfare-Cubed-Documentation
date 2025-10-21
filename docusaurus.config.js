@@ -53,7 +53,7 @@ const config = {
 				hideOnScroll: true,
 				logo: {
 					alt: "Modern Warfare Cubed Logo",
-					src: "img/logo.png"
+					src: "img/logo.webp"
 				},
 				items: [
 
